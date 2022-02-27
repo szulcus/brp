@@ -101,7 +101,7 @@
 			};
 		},
 		methods: {
-			async addProduct(e: FormDataEvent) {
+			async addProduct(e: Event) {
 				try {
 					await this.$fire.database.ref('products').push().set({
 						name: this.product.name,
