@@ -9,7 +9,8 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint": "yarn lint:js",
-    "lintfix": "yarn lint:js --fix"
+    "lintfix": "yarn lint:js --fix",
+    "commit": "git add . && git commit"
   },
   "dependencies": {
     "@nuxtjs/dayjs": "^1.4.1",
