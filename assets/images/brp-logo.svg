@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <clipPath id="clip-brp-logo">
+      <rect width="400" height="400"/>
+    </clipPath>
+  </defs>
+  <g id="brp-logo" clip-path="url(#clip-brp-logo)">
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="300" height="100" transform="translate(50 150)" fill="#87ceeb"/>
+    <path id="Intersection_2" data-name="Intersection 2" d="M30,130V80.467A180.926,180.926,0,0,1,80.467,30H279.533A180.926,180.926,0,0,1,330,80.467V130Z" transform="translate(20 20)" fill="#fff"/>
+    <path id="Intersection_1" data-name="Intersection 1" d="M80.467,330A180.926,180.926,0,0,1,30,279.533V230H330v49.533A180.926,180.926,0,0,1,279.533,330Z" transform="translate(20 20)" fill="red"/>
+    <g id="Ellipse_3" data-name="Ellipse 3" fill="none" stroke="#b22222" stroke-width="50">
+      <circle cx="200" cy="200" r="200" stroke="none"/>
+      <circle cx="200" cy="200" r="175" fill="none"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" x1="235" y2="235" transform="translate(83 83)" fill="none" stroke="#b22222" stroke-width="50"/>
+  </g>
+</svg>

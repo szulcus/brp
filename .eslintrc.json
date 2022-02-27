@@ -1,0 +1,39 @@
+{
+	"root": true,
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"extends": [
+		"plugin:nuxt/recommended",
+		"@nuxtjs/eslint-config-typescript"
+	],
+	"plugins": [
+	],
+	// add your custom rules here
+	"rules": {
+		"comma-dangle": ["error", "always-multiline"],
+		"space-before-function-paren": ["error", {
+		"anonymous": "never",
+		"named": "never",
+		"asyncArrow": "always"
+		}],
+		"semi": ["error", "always"],
+		"indent": "off",
+		"no-tabs": "off", // Todo: Change to ["error", { "allowIndentationTabs": true }]
+		"arrow-parens": ["error", "always"],
+		"no-console": "off", // Todo: Change to "on"
+		"brace-style": ["error", "stroustrup"],
+		"curly": ["error", "multi-line"],
+		"vue/max-attributes-per-line": "off",
+		"vue/singleline-html-element-content-newline": "off",
+		"vue/no-v-html": "off",
+		"vue/html-indent": ["error", "tab"],
+		"vue/script-indent": ["error", "tab", { "baseIndent": 1 }],
+		"vue/no-multiple-template-root": "off",
+		"vue/html-self-closing": ["error", {
+			"html": { "void": "always" }
+		}]
+		// "vue/component-definition-name-casing": ["error", "PascalCase" | "kebab-case"],
+	}
+}

@@ -1,0 +1,14 @@
+@mixin hover {
+	cursor: pointer;
+	@media (hover:hover) {
+		&:hover {
+			@content;
+		}
+	}
+}
+
+@mixin mhover {
+	@media (hover:none) {
+		@content;
+	}
+}
