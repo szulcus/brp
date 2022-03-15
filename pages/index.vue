@@ -11,9 +11,10 @@
 			</div>
 			<button class="header__button">Zaproponuj produkt</button>
 		</header>
-		<form name="contact" netlify action="/thank-you">
+		<form name="contact" netlify netlify-honeypot="bot-field" action="/thank-you">
+			<input value="contact" name="form-name" type="hidden" />
 			<p>
-				<label>Name <input type="text" name="name" /></label>
+				<label>Namee <input type="text" name="name" /></label>
 			</p>
 			<p>
 				<label>Email <input type="email" name="email" /></label>
