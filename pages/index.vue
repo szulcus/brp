@@ -11,7 +11,7 @@
 			</div>
 			<button class="header__button">Zaproponuj produkt</button>
 		</header>
-		<form name="contact" netlify>
+		<form name="contact" netlify action="/thank-you">
 			<p>
 				<label>Name <input type="text" name="name" /></label>
 			</p>
