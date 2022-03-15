@@ -11,7 +11,18 @@
 			</div>
 			<button class="header__button">Zaproponuj produkt</button>
 		</header>
-		<form class="home__add" @submit.prevent="addProduct">
+		<form name="contact" netlify>
+			<p>
+				<label>Name <input type="text" name="name" /></label>
+			</p>
+			<p>
+				<label>Email <input type="email" name="email" /></label>
+			</p>
+			<p>
+				<button type="submit">Send</button>
+			</p>
+		</form>
+		<!-- <form class="home__add" @submit.prevent="addProduct">
 			<label class="add__label">
 				<input v-model="product.name" class="label__input" type="text" placeholder=" " required />
 				<span class="label__placeholder">Nazwa</span>
@@ -25,7 +36,7 @@
 				<span class="label__placeholder">Podkategoria</span>
 			</label>
 			<button type="submit">+</button>
-		</form>
+		</form> -->
 		<VueGoodTable
 			v-if="admin"
 			:columns="columns"
@@ -48,7 +59,7 @@
 
 <script lang="ts">
 	import Vue from 'vue';
-	import 'vue-good-table/dist/vue-good-table.css';
+	// import 'vue-good-table/dist/vue-good-table.css';
 
 	interface Product {
 		name: string;
@@ -235,6 +246,29 @@
 	}
 </style>
 <style lang="scss">
+	//// grey ramp
+	$base-grey: $bg-tertiary !default;
+	// $light-grey: #E4E7ED !default;
+	// $lighter-grey: #EBEEF5 !default;
+	// $extra-light: #F2F6FC !default;
+
+	$table-bg: $bg-secondary !default;
+	$text-color: $text-primary !default;
+	// $secondary-text-color: #909399 !default;
+	// $input-border-color: $base-grey !default;
+	// $border-color: $base-grey !default;
+	$highlight-color: $bg-tertiary !default;
+
+	$thead-bg-color-1: $bg-tertiary !default;
+	$thead-bg-color-2: $bg-tertiary !default;
+	// // $chevron-color: darken($thead-bg-color-1, 12%);
+	// $chevron-color: #606266;
+
+	// // link
+	// $link-color: #409eff;
+	// $notify-bg-color: red;
+	// $notify-fg-color: #b38d28;
+	@import "../node_modules/vue-good-table/src/styles/style.scss";
 	.vgt-wrap {
 		border-radius: 10px;
 		overflow: hidden;
